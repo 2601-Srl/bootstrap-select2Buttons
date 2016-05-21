@@ -1,0 +1,14 @@
+{
+    "name": "_2601/select2Buttons",
+    "description": "Converts html select into buttons",
+    "version": "1.0",
+    "type": "component",
+    "license": "MIT",
+    "keywords": ["bootstrap", "javascript", "js", "jquery"],
+    "authors": [
+        {
+            "name": "Gabriele Sbaiz",
+            "email": "webservices@2601.it"
+        }
+    ]
+}

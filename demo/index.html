@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags always come first -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/select2Buttons.css" />
+</head>
+<body>
+
+<nav class="navbar navbar-fixed-top navbar-light bg-faded">
+  <a class="navbar-brand" href="index.html">Bootstrap select2buttons</a>
+  <ul class="nav navbar-nav">
+	<li class="nav-item active">
+	  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+	</li>
+  </ul>
+</nav>
+
+<br><br><br>
+
+<form method="GET">
+
+	<div class="container">
+
+		<h4>General</h4>
+
+		<div class="row">
+
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+				<div class="card">
+					<div class="card-header">
+						Simple select
+					</div>
+					<div class="card-block">
+						<select name="simple-select" data-toggle="select2Buttons">
+							<option value="One">One</option>
+							<option value="Two">Two</option>
+							<option value="Three">Three</option>
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+				<div class="card">
+					<div class="card-header">
+						Preselected select
+					</div>
+					<div class="card-block">
+						<select name="preselected-select" data-toggle="select2Buttons">
+							<option value="One">One</option>
+							<option value="Two" selected="selected">Two</option>
+							<option value="Three">Three</option>
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+				<div class="card">
+					<div class="card-header">
+						Disable option select
+					</div>
+					<div class="card-block">
+						<select name="disabled-option-select" data-toggle="select2Buttons">
+							<option value="One">One</option>
+							<option value="Two" disabled="disabled">Two</option>
+							<option value="Three">Three</option>
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+				<div class="card">
+					<div class="card-header">
+						Disabled select
+					</div>
+					<div class="card-block">
+						<select name="disabled-select" disabled="true" data-toggle="select2Buttons">
+							<option value="One">One</option>
+							<option value="Two">Two</option>
+							<option value="Three">Three</option>
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+				<div class="card">
+					<div class="card-header">
+						JS Callback Select
+					</div>
+					<div class="card-block">
+						<select name="js-callback-select" data-toggle="select2Buttons">
+							<option value="One">One</option>
+							<option value="Two">Two</option>
+							<option value="Three">Three</option>
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+				<div class="card">
+					<div class="card-header">
+						No Default Select
+					</div>
+					<div class="card-block">
+						<select name="no-default-select">
+							<option value="One">One</option>
+							<option value="Two">Two</option>
+							<option value="Three">Three</option>
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+				<div class="card">
+					<div class="card-header">
+						Opt Group Select
+					</div>
+					<div class="card-block">
+						<select name="opt-group-select" data-toggle="select2Buttons">
+							<optgroup label="Numbers">
+								<option value="One">One</option>
+								<option value="Two">Two</option>
+								<option value="Three">Three</option>
+							</optgroup>
+							<optgroup label="Colours">
+								<option value="Red">Red</option>
+								<option value="Blue">Blue</option>
+								<option value="Green">Green</option>
+							</optgroup>
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+				<div class="card">
+					<div class="card-header">
+						Multiselect
+					</div>
+					<div class="card-block">
+						<select name="multi-select" multiple="multiple" data-toggle="select2Buttons">
+							<option value="One">One</option>
+							<option value="Two">Two</option>
+							<option value="Three">Three</option>
+						</select>
+					</div>
+				</div>
+			</div>
+	
+		</div>
+
+		<h4>Styling - Color</h4>
+
+		<div class="row">
+
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+				<div class="card">
+					<div class="card-header">
+						Color: primary
+					</div>
+					<div class="card-block">
+						<select name="simple-select" data-toggle="select2Buttons" data-style="primary">
+							<option value="One">One</option>
+							<option value="Two">Two</option>
+							<option value="Three">Three</option>
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+				<div class="card">
+					<div class="card-header">
+						Color: secondary
+					</div>
+					<div class="card-block">
+						<select name="simple-select" data-toggle="select2Buttons" data-style="secondary">
+							<option value="One">One</option>
+							<option value="Two">Two</option>
+							<option value="Three">Three</option>
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+				<div class="card">
+					<div class="card-header">
+						Color: success
+					</div>
+					<div class="card-block">
+						<select name="simple-select" data-toggle="select2Buttons" data-style="success">
+							<option value="One">One</option>
+							<option value="Two">Two</option>
+							<option value="Three">Three</option>
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+				<div class="card">
+					<div class="card-header">
+						Color: info
+					</div>
+					<div class="card-block">
+						<select name="simple-select" data-toggle="select2Buttons" data-style="info">
+							<option value="One">One</option>
+							<option value="Two">Two</option>
+							<option value="Three">Three</option>
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+				<div class="card">
+					<div class="card-header">
+						Color: warning
+					</div>
+					<div class="card-block">
+						<select name="simple-select" data-toggle="select2Buttons" data-style="warning">
+							<option value="One">One</option>
+							<option value="Two">Two</option>
+							<option value="Three">Three</option>
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+				<div class="card">
+					<div class="card-header">
+						Color: danger
+					</div>
+					<div class="card-block">
+						<select name="simple-select" data-toggle="select2Buttons" data-style="danger">
+							<option value="One">One</option>
+							<option value="Two">Two</option>
+							<option value="Three">Three</option>
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+				<div class="card">
+					<div class="card-header">
+						Color: primary-outline
+					</div>
+					<div class="card-block">
+						<select name="simple-select" data-toggle="select2Buttons" data-style="primary-outline">
+							<option value="One">One</option>
+							<option value="Two">Two</option>
+							<option value="Three">Three</option>
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+				<div class="card">
+					<div class="card-header">
+						Color: secondary-outline
+					</div>
+					<div class="card-block">
+						<select name="simple-select" data-toggle="select2Buttons" data-style="secondary-outline">
+							<option value="One">One</option>
+							<option value="Two">Two</option>
+							<option value="Three">Three</option>
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+				<div class="card">
+					<div class="card-header">
+						Color: success-outline
+					</div>
+					<div class="card-block">
+						<select name="simple-select" data-toggle="select2Buttons" data-style="success-outline">
+							<option value="One">One</option>
+							<option value="Two">Two</option>
+							<option value="Three">Three</option>
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+				<div class="card">
+					<div class="card-header">
+						Color: info-outline
+					</div>
+					<div class="card-block">
+						<select name="simple-select" data-toggle="select2Buttons" data-style="info-outline">
+							<option value="One">One</option>
+							<option value="Two">Two</option>
+							<option value="Three">Three</option>
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+				<div class="card">
+					<div class="card-header">
+						Color: warning-outline
+					</div>
+					<div class="card-block">
+						<select name="simple-select" data-toggle="select2Buttons" data-style="warning-outline">
+							<option value="One">One</option>
+							<option value="Two">Two</option>
+							<option value="Three">Three</option>
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+				<div class="card">
+					<div class="card-header">
+						Color: danger-outline
+					</div>
+					<div class="card-block">
+						<select name="simple-select" data-toggle="select2Buttons" data-style="danger-outline">
+							<option value="One">One</option>
+							<option value="Two">Two</option>
+							<option value="Three">Three</option>
+						</select>
+					</div>
+				</div>
+			</div>
+	
+		</div>
+
+		<h4>Styling - Size</h4>
+
+		<div class="row">
+
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+				<div class="card">
+					<div class="card-header">
+						Size: extra small
+					</div>
+					<div class="card-block">
+						<select name="simple-select" data-toggle="select2Buttons" data-size="xs">
+							<option value="One">One</option>
+							<option value="Two">Two</option>
+							<option value="Three">Three</option>
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+				<div class="card">
+					<div class="card-header">
+						Size: small
+					</div>
+					<div class="card-block">
+						<select name="simple-select" data-toggle="select2Buttons" data-size="sm">
+							<option value="One">One</option>
+							<option value="Two">Two</option>
+							<option value="Three">Three</option>
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+				<div class="card">
+					<div class="card-header">
+						Size: normal
+					</div>
+					<div class="card-block">
+						<select name="simple-select" data-toggle="select2Buttons">
+							<option value="One">One</option>
+							<option value="Two">Two</option>
+							<option value="Three">Three</option>
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+				<div class="card">
+					<div class="card-header">
+						Size: large
+					</div>
+					<div class="card-block">
+						<select name="simple-select" data-toggle="select2Buttons" data-size="lg">
+							<option value="One">One</option>
+							<option value="Two">Two</option>
+							<option value="Three">Three</option>
+						</select>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<h4>Extra</h4>
+
+		<div class="row">
+
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+				<div class="card">
+					<div class="card-header">
+						Yes / No
+					</div>
+					<div class="card-block">
+						<select name="simple-select" data-toggle="select2Buttons" data-size="xs">
+							<option value="Yes">Yes</option>
+							<option value="No">No</option>
+						</select>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+		
+
+				<input type="submit"/>
+			</p>
+		</form>
+
+	</div>
+
+		<!-- jQuery first, then Bootstrap JS. -->
+		<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/tether/1.3.1/js/tether.min.js"></script>
+		<script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+		<script type="text/javascript" src="../js/select2Buttons.js"></script>
+
+		<script>
+			$('[data-toggle="select2Buttons"]').select2Buttons();
+
+			$('select[name=js-callback-select]').change(function() {
+				alert('Changed to ' + $(this).val());
+			});
+
+			$('select[name=no-default-select]').select2Buttons({noDefault: true});
+		</script>
+	</body>
+	</html>
