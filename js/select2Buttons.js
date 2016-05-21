@@ -11,11 +11,14 @@ jQuery.fn.select2Buttons = function(options) {
         var select = $(this);
         var multipleSelect = select.attr("multiple");
 
-        var size = "";
-        $(this).attr("data-size") && (size = " btn-" + $(this).attr("data-size"));
+        var btnSize = "";
+        $(this).attr("data-size") && (btnSize = " btn-" + $(this).attr("data-size"));
 
-        var style = "btn-secondary";
-        $(this).attr("data-style") && (style = " btn-" + $(this).attr("data-style"));
+        var btnStyle = "btn-secondary";
+        $(this).attr("data-style") && (btnStyle = " btn-" + $(this).attr("data-style"));
+
+        var minWidth = "";
+        $(this).attr("data-min-width") && (minWidth = "min-width: " + $(this).attr("data-min-width") + ";");
 
         select.hide();
 
@@ -30,7 +33,7 @@ jQuery.fn.select2Buttons = function(options) {
             
             optGroup.children('option').each(function(){
 
-                var buttonHtml = $('<a class="btn ' + style + size + '" href="#" data-select-index="' + selectIndex + '">' + $(this).html() + '</a>');
+                var buttonHtml = $('<a class="btn ' + btnStyle + btnSize + '" href="#" data-select-index="' + selectIndex + '" style="' + minWidth + '">' + $(this).html() + '</a>');
 
                 if ($(this).attr('disabled') || select.attr('disabled')){
                     buttonHtml.addClass('disabled');
