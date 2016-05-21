@@ -22,7 +22,7 @@ jQuery.fn.select2Buttons = function(options) {
 
         select.hide();
 
-        var btnGroupHtml = $('<div class="btn-group"></div>');
+        var btnGroupHtml = $('<div class="btn-group select2Buttons"></div>');
         var selectIndex = 0;
         
         var addOptGroup = function(optGroup){
